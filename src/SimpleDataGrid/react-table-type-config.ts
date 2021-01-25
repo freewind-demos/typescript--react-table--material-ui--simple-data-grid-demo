@@ -46,7 +46,7 @@ import {
   UseSortByHooks,
   UseSortByInstanceProps,
   UseSortByOptions,
-  UseSortByState
+  UseSortByState, ColumnGroup, ColumnWithLooseAccessor, ColumnWithStrictAccessor
 } from 'react-table'
 
 declare module 'react-table' {
@@ -114,7 +114,7 @@ declare module 'react-table' {
       UseResizeColumnsColumnProps<D>,
       UseSortByColumnProps<D> {
   }
-
+  
   export interface Cell<D extends object = {}, V = any>
     extends UseGroupByCellProps<D>,
       UseRowStateCellProps<D> {
